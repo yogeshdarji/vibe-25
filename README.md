@@ -1,36 +1,58 @@
-# vibe-25
+# CTF Social Engineering Tools
 
-CTF Social Engineering Challenge Tool
+Educational tools for understanding social engineering vulnerabilities in CTF challenges.
 
-## Description
+## Overview
 
-This tool is designed for educational CTF (Capture The Flag) challenges that involve social engineering AI-controlled teams to reveal their flags.
+This repository contains templates and examples for CTF (Capture The Flag) challenges that involve social engineering AI systems. These tools are for educational purposes to understand security vulnerabilities.
 
-## Main Script
+## Files
 
-- `attack.py` - Enhanced CTF client with logging, retry logic, and automated attack capabilities
+### Safe Templates (Can be committed)
+- `ctf_attack_template.py` - Generic attack template without sensitive data
+- `README.md` - This documentation
 
-## Features
-
-- Automated attack mode with multiple social engineering strategies
-- Flag pattern detection and extraction
-- Conversation history tracking
-- Rate limiting to prevent server overload
-- Comprehensive logging
-- Interactive and automated modes
+### Local Files (DO NOT COMMIT)
+- Any files containing:
+  - API keys
+  - IP addresses
+  - Passwords
+  - Team-specific information
+  - Attack results
 
 ## Usage
 
-```bash
-python attack.py
-```
+1. Copy the template files
+2. Add your specific configuration (API keys, IPs, etc.)
+3. Run locally - do not commit configured files
 
-Then choose:
-- Press a number to select a specific team
-- Press 'a' for auto-attack all teams
-- Press 's' to save conversation history
-- Press 'q' to quit
+## Security Notes
+
+- Never commit real API keys
+- Never commit IP addresses
+- Never commit passwords
+- Use `.gitignore` to exclude sensitive files
 
 ## Educational Purpose
 
-This tool is created for educational purposes to understand social engineering vulnerabilities in CTF environments.
+These tools demonstrate:
+- Social engineering techniques in CTF environments
+- API vulnerability testing
+- Security awareness training
+
+## Disclaimer
+
+These tools are for authorized CTF competitions and educational purposes only. Do not use for unauthorized access or malicious purposes.
+
+## Best Practices for CTF
+
+1. **Offensive**: Learn how attacks work
+2. **Defensive**: Understand how to protect against them
+3. **Ethical**: Only use in authorized environments
+
+## Contributing
+
+When contributing:
+- Only submit generic templates
+- Remove all sensitive data
+- Focus on educational value

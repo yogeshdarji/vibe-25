@@ -1,3 +1,39 @@
+# IMPORTANT - Sensitive files to exclude
+*.log
+*.json
+*_results.*
+*attack.py
+*_attack.py
+attack_*.py
+jtan_*.py
+ssh_*.py
+auto_*.py
+quick_*.py
+simple_*.py
+fast_*.py
+pi_*.py
+
+# Files with IPs or credentials
+**/config.json
+**/*secret*
+**/*password*
+**/*key*
+**/*credential*
+
+# Result files
+conversation_history.json
+attack_results.json
+scan_results.json
+rapid_attack_results.json
+ssh_attack_results.json
+jtan_results.json
+
+# Temporary files
+*.tmp
+*.bak
+*~
+.DS_Store
+
 # Python
 __pycache__/
 *.py[cod]
@@ -8,25 +44,19 @@ env/
 venv/
 .env
 
-# Logs
-*.log
-ctf_client.log
-
-# Results
-attack_results.json
-conversation_history.json
-
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS
-.DS_Store
-Thumbs.db
+# Any file with specific IPs
+*192.168.*
+*cmdtl*
+*cmdtn*
 
-# Temporary files
-*.tmp
-*.bak
-*~
+# Exclude everything except templates
+/*
+!/ctf_attack_template.py
+!/README_SAFE.md
+!/.gitignore_complete
